@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,800|Roboto+Condensed');
 
+/*These key frames designate how the cursor should blink*/
 @-moz-keyframes blinker {
     0% { opacity: 1.0; }
     50% { opacity: 0.0; }
@@ -18,6 +19,7 @@
     100% { opacity: 1.0; }
 }
 
+/*Set up initial page*/
 html {
   height: 100%;
   box-sizing: border-box;
@@ -29,6 +31,7 @@ html {
   box-sizing: inherit;
 }
 
+/*Remove margins and padding and use relative positioning*/
 body {
     margin: 0px;
     padding: 0px;
@@ -75,6 +78,7 @@ p {
 }
 
 #home-nav nav ul li {
+    font-family: 'Open Sans', sans-serif;
     display: inline-block;
     text-decoration: none;
     margin-right: 10px;
@@ -84,7 +88,7 @@ p {
 
 #home-nav nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     background-color: #424242;
     padding: 5px 7px 5px 7px;
     border: 1px solid #424242;
@@ -93,7 +97,7 @@ p {
 
 #home-nav nav ul li a:hover {
     background-color: white;
-    color: #424242;
+    color: #000;
 }
 
 #header-pic {
@@ -106,7 +110,7 @@ p {
     background-image: url('images/background.jpeg');
     background-repeat: no-repeat;
     height: 700px;
-    background-position: 80% 30%;
+    background-position: 80% 35%;
     background-clip: padding-box;
 }
 
@@ -120,13 +124,11 @@ p {
 
 .thick {
     font-family: monospace, serif;
-    font-weight:lighter;
 }
 
 
 
 #mid-level div {
-    border: 1px solid black;
     display: inline-block;
     vertical-align: top;
 }
@@ -153,8 +155,6 @@ p {
 }
 
 #bot-level {
-    border: 1px solid black;
-
 }
 
 #footer {
@@ -168,7 +168,6 @@ p {
 }
 
 .blink_me {
-    font-family: sans-serif;
     -webkit-animation-name: blinker;
     -webkit-animation-duration: 1.5s;
     -webkit-animation-timing-function: linear;
