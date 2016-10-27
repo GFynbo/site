@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,800|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,800|Roboto+Condensed:400,600');
+
+@@media min-width:1024px; {
+
 
 /*These key frames designate how the cursor should blink*/
 @-moz-keyframes blinker {
@@ -38,8 +41,10 @@ body {
     position: relative;
     padding-bottom: 6rem;
     min-height: 100%;
+    font-family: 'Open Sans', sans-serif;
 }
 
+/* Ensure everything is equal */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -50,6 +55,7 @@ p {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+/* ====== NAVIGATION SECTION ====== */
 #home-nav {
     text-decoration: none;
     width: 100%;
@@ -84,6 +90,7 @@ p {
     margin-right: 10px;
     padding-right: 10px;
     vertical-align: middle;
+    font-size: 1.2em;
 }
 
 #home-nav nav ul li a {
@@ -100,6 +107,7 @@ p {
     color: #000;
 }
 
+/* ====== TOP/HEADER SECTION ====== */
 #header-pic {
     background-color: #fff;
     /*padding: 10px;*/
@@ -126,47 +134,6 @@ p {
     font-family: monospace, serif;
 }
 
-
-
-#mid-level div {
-    display: inline-block;
-    vertical-align: top;
-}
-
-#about-me {
-    border: 1px solid #000;
-    padding: 20px;
-    margin: 20px;
-    width: 33%;
-}
-
-#about-me h3 {
-    border-bottom: 1px solid black;
-}
-
-#projects {
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid #000;
-}
-
-#projects h3 {
-    border-bottom: 1px solid black;
-}
-
-#bot-level {
-}
-
-#footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
-}
-
 .blink_me {
     -webkit-animation-name: blinker;
     -webkit-animation-duration: 1.5s;
@@ -182,4 +149,68 @@ p {
     animation-duration: 1.25s;
     animation-timing-function: step-end;
     animation-iteration-count: infinite;
+}
+
+/* ====== MID/PROJECTS SECTION ====== */
+
+#mid-level div {
+    display:inline-block;
+    vertical-align: top;
+}
+
+#about-me {
+    border: 1px solid #000;
+    padding: 20px;
+    margin: 20px;
+}
+
+#about-me h2 {
+    border-bottom: 1px solid #FF9900;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #FF9900;
+}
+
+#about-me p {
+    font-size: 1.2em;
+}
+
+#projects {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #000;
+}
+
+#projects h2 {
+    border-bottom: 1px solid #3299BB;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #3299BB;
+}
+
+#projects p {
+    font-size: 1.2em;
+}
+
+#proj-1 {
+    display: inline-block;
+}
+
+#proj-1 img {
+
+}
+
+/* ====== BOTTOM/FOOTER SECTION ====== */
+#bot-level {
+}
+
+#footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
 }
