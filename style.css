@@ -1,26 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,800|Roboto+Condensed:400,600');
 
-@@media min-width:1024px; {
-
-
-/*These key frames designate how the cursor should blink*/
-@-moz-keyframes blinker {
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
-}
-
-@-webkit-keyframes blinker {
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
-}
-
-@keyframes blinker {
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
-}
+@media (min-width:1024px) {
 
 /*Set up initial page*/
 html {
@@ -42,6 +22,9 @@ body {
     padding-bottom: 6rem;
     min-height: 100%;
     font-family: 'Open Sans', sans-serif;
+    background: #293f50;
+    color: #888;
+    font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Ensure everything is equal */
@@ -52,7 +35,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 p {
-    font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* ====== NAVIGATION SECTION ====== */
@@ -60,11 +42,6 @@ p {
     text-decoration: none;
     width: 100%;
     display: inline-block;
-    position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
-    background: rgba(0,0,0,.2);
     text-align: right;
 }
 
@@ -105,99 +82,6 @@ p {
 #home-nav nav ul li a:hover {
     background-color: white;
     color: #000;
-}
-
-/* ====== TOP/HEADER SECTION ====== */
-#header-pic {
-    background-color: #fff;
-    /*padding: 10px;*/
-    text-align: center;
-    margin: 0px auto;
-    width: 100%;
-    border: 1px solid black;
-    background-image: url('images/background.jpeg');
-    background-repeat: no-repeat;
-    height: 700px;
-    background-position: 80% 35%;
-    background-clip: padding-box;
-}
-
-#header-pic h1 {
-    margin-top: 180px;
-    color: #E9E9E9;
-    text-align: right;
-    margin-right: 40px;
-    font-size: 4em;
-}
-
-.thick {
-    font-family: monospace, serif;
-}
-
-.blink_me {
-    -webkit-animation-name: blinker;
-    -webkit-animation-duration: 1.5s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-
-    -moz-animation-name: blinker;
-    -moz-animation-duration: 1.5s;
-    -moz-animation-timing-function: linear;
-    -moz-animation-iteration-count: infinite;
-
-    animation-name: blinker;
-    animation-duration: 1.25s;
-    animation-timing-function: step-end;
-    animation-iteration-count: infinite;
-}
-
-/* ====== MID/PROJECTS SECTION ====== */
-
-#mid-level div {
-    display:inline-block;
-    vertical-align: top;
-}
-
-#about-me {
-    border: 1px solid #000;
-    padding: 20px;
-    margin: 20px;
-}
-
-#about-me h2 {
-    border-bottom: 1px solid #FF9900;
-    font-size: 1.5em;
-    font-weight: 600;
-    color: #FF9900;
-}
-
-#about-me p {
-    font-size: 1.2em;
-}
-
-#projects {
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid #000;
-}
-
-#projects h2 {
-    border-bottom: 1px solid #3299BB;
-    font-size: 1.5em;
-    font-weight: 600;
-    color: #3299BB;
-}
-
-#projects p {
-    font-size: 1.2em;
-}
-
-#proj-1 {
-    display: inline-block;
-}
-
-#proj-1 img {
-
 }
 
 /* ====== BOTTOM/FOOTER SECTION ====== */

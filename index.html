@@ -1,47 +1,105 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Gavin Fynbo | Home</title>
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-        <div id="home-nav">
+<html lang="en">
 
-            <nav>
+  <head>
+    <meta charset="utf-8">
+    <title>Home | Gavin Fynbo</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+  </head>
 
-                <ul>
-                    <li><img src="images/headshot2.png" height="60" alt="Headshot of Gavin against a white wall."></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+  <body>
 
-        <div id="header-pic">
-            <h1><span class="thick">gavinfynbo@home:~$ <span class="blink_me">_</span></span></h1>
+    <!-- Header -->
 
-        </div>
+    <header class="primary-header container group">
 
-        <div id="mid-level">
-            <div id="about-me">
-                <h2>About me</h2>
-                    <p>For as long as I can remember, I have had a love for solving puzzles and for fiddling with whatever technology I can get my hands on. Fiddling is also what allowed me to get my foot in the door with programming and led to building my own computer at age 12. Challenging puzzles and problems like Sudoku encouraged me to deconstruct things which helped me build a nearly unbeatable tic-tac-toe AI and as a result, I developed a love for programming. The combination between my fascination with computers and lust for challenging puzzles led me straight to the field of computer science.</p>
-                    <p>Using my programming skills, hard work, and clear communications I can work individually or with a team to build any program. That can include, a better search engine for finding well fitting clothes or a program to find traffic patterns to build better, more efficient cities.</p>
-                    <p>If you want to work with an <em>ambitious and innovative</em> software developer, look no further!</p>
-            </div>
+      <h1 class="logo">
+        <a href="index.html">Gavin <br> Fynbo</a>
+      </h1>
 
-            <div id="projects">
-                <h2>Projects</h2>
-                <div id="proj-1">
-                    <p>This is a web application that allows a business owner to have a personalized online contract for his customers to fill out and submit also allowing them to electronically sign said contracts. After the contract has been submitted the owner can then use multiple options on the database page to either send an email reminding them they have a payment due, print their contract out, or update their contact information. This web application uses HTML5, CSS, PHP, MySQL, and JavaScript.</p>
-                    <img class="img-right" src="images/proj-img/bfscreen.png" height="150px" alt="Picture of Bob Fountain web application.">
-                </div>
-            </div>
-        </div>
-            <footer id="footer">
-                Gavin Fynbo | &copy; 2016
-            </footer>
-    </body>
+      <h3 class="tagline">Software Developer &mdash; Boston, MA</h3>
+
+      <nav class="primary-nav nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
+
+    </header>
+
+    <!-- Hero -->
+
+    <section class="hero container">
+
+          <h2>Addicted to the thrill of Innovation</h2>
+          <h4>(and sometimes coffee)</h4>
+
+          <p>If you want to work with an ambitious and innovative software developer, look no further!</p>
+
+          <a class="btn btn-alt" href="contact.html">Contact Now</a>
+
+      </section>
+
+    <!-- Teasers -->
+
+    <section class="row">
+        <div class="grid">
+
+          <!-- Projects -->
+
+          <section class="teaser col-1-3">
+            <a href="projects.html">
+              <h5>Projects</h5>
+              <img src="assets/images/projects.jpeg" width="100%"
+              alt="Picture of work bench with various tools.">
+              <h3>My Personal Projects</h3>
+            </a>
+            <p>INPUT DESCRIPTION!!!</p>
+          </section>
+
+          <!--contact -->
+
+          <section class="teaser col-1-3">
+            <a href="contact.html">
+              <h5>Contact</h5>
+              <img class="headshot" src="assets/images/questions.jpeg"
+              alt="Trees painted with question marks." >
+              <h3>Have Questions?</h3>
+            </a>
+            <p>Go ahead and fill out this short form to get in touch with me. I welcome anything from questions about the website, to job offers. </p>
+          </section>
+
+          <!-- linkedin -->
+
+          <section class="teaser col-1-3">
+            <a href="https://www.linkedin.com/in/gavin-fynbo">
+              <h5>LinkedIn</h5>
+              <img src="assets/images/connect.jpeg"
+              alt="LinkedIn blue logo.">
+              <h3>Connect with me!</h3>
+            </a>
+            <p>Look no further for your #1 software engineer! Connect with me now to get in touch.</p>
+          </section>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="primary-footer container group">
+
+      <small>&copy; Gavin Fynbo 2016</small>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+    </footer>
+
+  </body>
 </html>
