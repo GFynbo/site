@@ -47,20 +47,37 @@
              <h5>PHP, MySQL, HTML, CSS, and JavaScript</h5>
 
              <section class="col-2-3">
+                 <h3>What?</h3>
                  <p>This is a web application that allows a
                  business owner to have a personalized online contract for his
                  customers to fill out and submit also allowing them to electronically
                  sign said contracts. After the contract has been submitted the owner
                  can then use multiple options on the database page to either send an
                  email reminding them they have a payment due, print their contract
-                 out, or update their contact information. This web application uses
-                 HTML5, CSS, PHP, MySQL, and JavaScript.</p>
+                 out, or update their contact information.</p>
+
+                 <h3>How?</h3>
+                 <p>The Contract Database web application uses a combination of PHP (for MySQL handling and security features),
+                     MySQL (for data storage and efficiency), HTML, CSS, &amp; JavaScript (for design and form handling). Initally the website
+                     prompts the user for a username and password via HTTP authentication on a private network. The website then
+                     takes a structured form, submits the information to the MySQL database, then directs the user to the database page.
+                     Utilizing PHP and MySQL the Customer Database page allows the user to see a formatted table of all the users with options
+                     to edit, print, or email each customer contract.
+                     <ul class="reasons">
+                         <li>Edit &mdash; allows the user to see the information and edit it</li>
+                         <li>Print &mdash; allows the user to print a minimalized form-like page</li>
+                         <li>Send Contract &mdash; emails the customer contract to the email address in the contract, prompting for an electronic signature</li>
+                     </ul>
+                 </p>
              </section>
 
-             <section class="col-1-3 project-info">
+             <section class="col-1-3">
                  <img class="project-img"
-                 src="assets/images/proj-img/bfscreen.png" width="100%"
+                 src="assets/images/bfscreen.png" width="100%"
                  alt="Screenshot of Bob Fountain Contract Database">
+                 <img class="project-img"
+                 src="assets/images/bfcode.png" width="100%"
+                 alt="Screenshot of Bob Fountain Contract Database code">
              </section>
          </div>
      </section>
@@ -68,24 +85,26 @@
      <!-- Second project, school project below -->
      <section class="row project">
          <div class="grid">
-             <h1>Tic-Tac-Toe</h1>
+             <h1>MiniGoogle</h1>
              <h5>Java</h5>
 
-             <section class="col-1-3 project-info">
+             <section class="col-1-3">
                  <img class="project-img"
-                 src="assets/images/proj-img/bfscreen.png" width="100%"
-                 alt="Screenshot of Bob Fountain Contract Database">
+                 src="assets/images/minigoogle.png" width="100%"
+                 alt="Screenshot of MiniGoogle Application Window.">
              </section>
 
              <section class="col-2-3">
-                 <p>This is a web application that allows a
-                 business owner to have a personalized online contract for his
-                 customers to fill out and submit also allowing them to electronically
-                 sign said contracts. After the contract has been submitted the owner
-                 can then use multiple options on the database page to either send an
-                 email reminding them they have a payment due, print their contract
-                 out, or update their contact information. This web application uses
-                 HTML5, CSS, PHP, MySQL, and JavaScript.</p>
+                 <h3>What?</h3>
+                 <p>MiniGoogle is a project that first started out as a small class project, but really took off
+                 when I became engrossed in the potential of the application. Ultimately, time caught up on me and I
+             was no longer able to update it.</p>
+
+                 <h3>How?</h3>
+                 <p>MiniGoogle is a Java application that takes as many text files as necessary filled with a title and first
+                     paragraph of the related Wikipedia article and implements that into a hash table. It then uses a cosine similarity
+                     calculation to determine the relevancy of your search phrase to the articles. Finally, it displays the articles
+                     in descending order based on that similarity calculation.</p>
              </section>
          </div>
      </section>
@@ -93,24 +112,31 @@
      <!-- Project 3, another class project -->
      <section class="row">
          <div class="grid">
-             <h1>MiniGoogle</h1>
+             <h1>Sim (Pencil Game)</h1>
              <h5>Java</h5>
 
              <section class="col-2-3">
-                 <p>This is a web application that allows a
-                 business owner to have a personalized online contract for his
-                 customers to fill out and submit also allowing them to electronically
-                 sign said contracts. After the contract has been submitted the owner
-                 can then use multiple options on the database page to either send an
-                 email reminding them they have a payment due, print their contract
-                 out, or update their contact information. This web application uses
-                 HTML5, CSS, PHP, MySQL, and JavaScript.</p>
+                 <h3>What?</h3>
+                 <p>Sim is defined by <a href="https://en.wikipedia.org/wiki/Sim_(pencil_game)">Wikipedia</a> as</p>
+                 <p class="blockquote">The game of Sim is played by two players on a board consisting of six dots ('vertices'). Each dot is connected to every other dot by a line ('edge').
+                     Two players take turns coloring any uncolored lines. One player colors in one color, and the other colors in another color, with each player trying to avoid the creation of a
+                     triangle made solely of their color (only triangles with the dots as corners count; intersections of lines are not relevant); the player who completes such a triangle loses immediately.</p>
+                 <p> which are the same rules that apply to this Java version of the game.</p>
+
+                 <h3>How?</h3>
+                 <p>Using an evaluation algorithm for each move, the game would test thousands of different moves. Using a tree data structure, the program kills certain paths
+                     of moves thanks to the algorithm concluding that given a specific move, then no further moves could be better. Choosing the most logical choice based on
+                     scoring specific strategies and efficient tree structures, the game would move in real time with a difficulty that causes nearly all inexperience players
+                      to lose every game.</p>
              </section>
 
-             <section class="col-1-3 project-info">
+             <section class="col-1-3">
                  <img class="project-img"
-                 src="assets/images/proj-img/bfscreen.png" width="100%"
-                 alt="Screenshot of Bob Fountain Contract Database">
+                 src="assets/images/simgame.png" width="100%"
+                 alt="Screenshot of Sim game being played through the Java application.">
+                 <img class="project-img"
+                 src="assets/images/simcode.png" width="80%"
+                 alt="Screenshot of some of the Sim game Java code.">
              </section>
          </div>
      </section>

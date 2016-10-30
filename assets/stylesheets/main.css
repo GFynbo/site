@@ -161,7 +161,7 @@ em {
 */
 
 a {
-  color: #648880;
+  color: #AE5FC1;
   text-decoration: none;
 }
 a:hover {
@@ -325,15 +325,15 @@ p a {
  }
 
  .row h1 {
-     color: #005F5F;
+     color: #004E4E;
  }
 
  .row-alt h1 {
-     color: #005F5F;
+     color: #004E4E;
  }
 
  .row-alt p {
-     color: #fff;
+     color: #87E7E7;
  }
 
  /*
@@ -387,6 +387,13 @@ Projects
   border-bottom: 1px dashed #648880;
 }
 
+.blockquote {
+    padding-left: 20px;
+    font-size: .9em;
+    font-style: italic;
+}
+
+
 /*
 ========================================
 Contact
@@ -395,4 +402,8 @@ Contact
 
 .reasons {
     list-style: square;
+}
+.reasons li {
+    list-style: square;
+    padding-top: 5px;
 }
