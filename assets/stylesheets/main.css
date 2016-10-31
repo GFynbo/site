@@ -899,7 +899,7 @@ p a {
 }
 .primary-nav {
   text-align: center;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 400;
   letter-spacing: .5px;
   text-transform: uppercase;
@@ -949,6 +949,8 @@ p a {
   display: inline-block;
   margin: 0 10px;
   vertical-align: top;
+  padding: 8px;
+  text-align: center;
 }
 
 
@@ -996,7 +998,7 @@ p a {
 
 .row,
 .row-alt{
-  min-width: 666px;
+  min-width: 100%;
 }
 .row {
   background: #fff;
