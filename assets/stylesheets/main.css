@@ -47,14 +47,13 @@ table {
   Custom styles
   ========================================
 */
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,900|Open+Sans');
 
 body {
   background: #6C0B84;
   color: #888;
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
 
 /*
   ========================================
