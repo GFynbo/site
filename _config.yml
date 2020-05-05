@@ -15,16 +15,12 @@ collections:
     permalink: /project/:path/
 
 social:
-    - icon: fa-facebook
-      link: "#"
     - icon: fa-twitter
       link: "https://twitter.com/fynbo_gavin"
     - icon: fa-linkedin
-      link: "#"
-    - icon: fa-stack-exchange
-      link: "#"
+      link: "https://linkedin.com/in/gavin-fynbo"
     - icon: fa-github
-      link: "https://github.com/agusmakmun"
+      link: "https://github.com/gfynbo"
 
 share:
   twitter_username: github.io
