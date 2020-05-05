@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-I'm Programmer for Python & Django. I've made quite a few web apps, especially on Django. Now, I am doing more on backend.
+I'm a full stack programmer with a tiny bit of real world experience and a whole lot of personal experience hacking crap together until I make something somewhat useful.
 
-email: agus[at]python.web.id
+email: gavfynbo[at]gmail.com

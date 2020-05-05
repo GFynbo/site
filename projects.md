@@ -4,4 +4,4 @@ title: Projects
 permalink: /projects/
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+Projects section is coming soon! Focusing on the blog for now but I primarily am working on (CaretakerDB)[https://caretakerdb.com]. Contact me for information or questions!
