@@ -77,9 +77,47 @@ Now that we've designed our system we want to implement it or attempt to. As I s
 
 ### MongoDB model
 
+We essentially wrote exactly what we needed for the MongoDB model above, I'll copy it below, but we will name this event `PropertyEvent`.
 
+```javascript
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+
+const PropertyEventSchema = new Schema({
+  eventId: {
+    type: String,
+    required: true
+  },
+  eventCreationTime: {
+    type: Date,
+    required: true
+  },
+  eventDate: {
+    type: Date,
+    required: true
+  },
+  propertyId: {
+    type: String,
+    required: true
+  },
+  cost: {
+    type: Number,
+    required: true
+  },
+  notes: {
+    type: String,
+  }
+});
+module.exports = PropertyEvent = mongoose.model("propertyEvent", PropertyEventSchema);
+```
 
 ### API endpoints
+
+Now we need to build these endpoints to allow users to create, update, and delete event history for this property. As I already have defined routing for a number of endpoints for properties, we will just build that into the existing routing. If you're looking to setup routing for the first time I'd follow this guide: [Express Routing](https://expressjs.com/en/guide/routing.html). We will also need a endpoint that retrieves all the events for a given property. We will build this first.
+
+```javascript
+
+```
 
 ### Modify view component
 
