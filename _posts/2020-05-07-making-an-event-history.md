@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Making an Event History for Properties"
+title:  "Making an Event History"
 date:   2020-05-07 12:00:00 -0700
 categories: [javascript]
 ---
 
-# Making an Event History for Properties
+## Making an Event History
 
 A quick three step recap/guide/whatever to building an event history for whatever web application you're developing.
 
@@ -20,6 +20,7 @@ In our case, we're looking to attach related events by `propertyId` and at the l
 const propertyEvent = {
     eventId: String,
     eventCreationTime: moment(),
+    eventDate: Date,
     propertyId: String,
     cost: Number,
     notes: String
@@ -60,19 +61,23 @@ Now that we have our object, and retrieval methods in place we need to design ou
 
 ### Displaying
 
-We can display this event history simply using a `<Card>` component in [Material-UI](https://material-ui.org) for basic information. We will also want to include a couple of buttons on this card under the actions section to allow edit and delete of an event.
+We can display this event history simply using a `<Card>` component in [Material-UI](https://material-ui.com) for basic information. We will also want to include a couple of buttons on this card under the actions section to allow edit and delete of an event.
 
 ### Editing
 
-TODO
+We will present essentially the same form as adding with the information auto-filled and an update button. This will follow the same process as adding except with an update on the backend.
 
 ### Adding
 
-TODO
+Another method we can use here is simply create a modal with a simple form that sends to the backend with the `notes`, `propertyId`, `cost`, and `eventDate`. The backend will assign the creation time and associated data. We will also confirm that the property we're assigning belongs to the authenticated user.
 
 ## Implementation (or an attempt at it)
 
+Now that we've designed our system we want to implement it or attempt to. As I said, easier said than done.
+
 ### MongoDB model
+
+
 
 ### API endpoints
 
